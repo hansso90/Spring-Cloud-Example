@@ -1,0 +1,3 @@
+#Configuration for a application with the name "config-client" with profile "test"
+some:
+  property: "config-client with profile 'test'"
