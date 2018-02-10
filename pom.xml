@@ -18,7 +18,9 @@
     </parent>
 
     <modules>
-        <module>discorvery-server</module>
+        <module>discovery-server</module>
+        <module>discovery-service</module>
+        <module>discovery-client</module>
     </modules>
 
     <properties>
