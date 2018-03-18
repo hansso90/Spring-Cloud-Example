@@ -1,0 +1,18 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          #uri: file://home/hans/IdeaProjects/spring-cloud-example
+          uri: https://github.com/hansso90/spring-cloud-example.git
+          searchPaths: config
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
