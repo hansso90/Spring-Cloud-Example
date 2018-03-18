@@ -4,7 +4,7 @@ config-client:
   value: default
 
 some:
-  property: "config-client property file, ik ben geupdate!"
+  property: "config-client property file!"
 
 management:
   security:
