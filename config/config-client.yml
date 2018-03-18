@@ -5,3 +5,9 @@ config-client:
 
 some:
   property: "config-client property file, ik ben geupdate!"
+
+management:
+  server:
+    port: 30000
+  security:
+      enabled: false
