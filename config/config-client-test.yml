@@ -1,3 +1,7 @@
 #Configuration for a application with the name "config-client" with profile "test"
+
+test:
+  value: debug
+
 some:
   property: "config-client with profile 'test'"
