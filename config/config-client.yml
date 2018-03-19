@@ -4,7 +4,7 @@ config-client:
   value: changed to other value
 
 some:
-  property: "config-client property file! Ik ben geupdated!"
+  property: "config-client property file!"
 
 management:
   security:
