@@ -24,6 +24,8 @@
         <module>config-server</module>
         <module>config-client</module>
         <module>zuul-gateway</module>
+        <module>ribbon-time-service</module>
+        <module>ribbon-time-app</module>
     </modules>
 
     <properties>
