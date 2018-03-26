@@ -13,6 +13,10 @@ Modules:
 - Zuul gateway
 - Ribbon time Service
 - Ribbon time app
+- Hystrix-weather-service
+- Hystrix-weather-app
+- Hystrix-dashboard
+- Hystrix-turbine
 
 ### Demo of Eureka:
 
