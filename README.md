@@ -89,7 +89,35 @@ Second: -Dserver.port=5555
 
 Start the RibbonTimeApp and open a browser for http://localhost:8080, to see the results.
 
+### Demo of Hystrix
 
+Modules needed for demo:
+- Discovery-server;
+- Hystrix-weather-service
+- Hystrix-weather-app
+- Hystrix-dashboard
+- Hystrix-turbine
+
+First of all start de discovery server module. With http://localhost:8761/eureka you can see which services has called in.
+
+Start the weather service and check if there is a message from http://localhost:9000/weather
+
+Start the Hystrix-weather-app en check if there is a message from http://localhost:9001/current/weather
+
+Turn off the weather service en check the url of Hystrix-weather-app again. 
+
+Next start the hystrix-dashboard and go to http://localhost:8080/hystrix and enter the following:
+- Enter http://localhost:9001/hystrix.stream
+- call it the weather app
+
+Start the weather service again en refresh a couple of time on http://localhost:9001/current/weather
+See the changes in the metrics
+
+Turbine is a application for combining hystrix metrics from different services, for my demo i only just added one service. 
+If you have more services add them to the hystrix-turbine in de application.yml.
+The will be located with the right name with the discovery service. 
+
+Enter for the full metrics the turbine stream of the turbine project, located on http://localhost:3000/turbine.stream. 
 
 
 

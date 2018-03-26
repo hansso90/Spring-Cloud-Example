@@ -26,6 +26,10 @@
         <module>zuul-gateway</module>
         <module>ribbon-time-service</module>
         <module>ribbon-time-app</module>
+        <module>hystrix-weather-service</module>
+        <module>hystrix-weather-app</module>
+        <module>hystrix-dashboard</module>
+        <module>hystrix-turbine</module>
     </modules>
 
     <properties>
